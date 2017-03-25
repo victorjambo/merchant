@@ -1,24 +1,7 @@
-# README
+# Merchant
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An e-commerce site for a small grocery that wants to sell products directly to customers over the web. The project will be built in several discreet iterations.
 
-Things you may want to cover:
+Set up all [environments](http://tutorials.jumpstartlab.com/topics/environment/environment.html)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[styles](http://tutorials.jumpstartlab.com/assets/merchant/styles.css)
