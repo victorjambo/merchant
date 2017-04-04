@@ -7,7 +7,7 @@ Set up all [environments](http://tutorials.jumpstartlab.com/topics/environment/e
 
 [styles](http://tutorials.jumpstartlab.com/assets/merchant/styles.css)
 
-Stop: [Improving the Orders Interface](http://tutorials.jumpstartlab.com/projects/merchant.html#iteration-4:-improving-the-orders-interface)
+Stop: [Improving the Orders Interface](http://tutorials.jumpstartlab.com/projects/merchant.html#iteration-5:-dealing-with-order-quantities)
 
 Good practice on;
 * Onmiauth
