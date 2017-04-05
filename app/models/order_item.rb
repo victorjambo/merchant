@@ -6,4 +6,5 @@ class OrderItem < ApplicationRecord
 		self.product.price * self.quantity
 	end
 	
+	#validates_numericality_of  :quantity, greater_than: 0
 end
