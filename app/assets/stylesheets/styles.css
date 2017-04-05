@@ -58,7 +58,7 @@ div#account a:hover{
 }
 
 
-#new_product{
+#new_product,#view_cart{
   margin: 10px 10px;
 }
 
@@ -154,10 +154,9 @@ pre {
   font-size: 11px;
 }
 
-a#new_product{
+a#new_product,#view_cart{
   position: absolute;
   top: 16px;
-  right: 20px;
   display: inline-block;
   padding: 4px 11px;
   font-size: .9em;
@@ -177,6 +176,19 @@ a#new_product{
   text-shadow: white 0 1px;
   color: #999;
   text-decoration: none;
+}
+
+a#new_product{
+  right: 20px;
+}
+
+a#view_cart{
+  right: 200px;
+}
+
+a:hover#view_cart{
+  color: #333;
+  text-shadow: white 0 0px;
 }
 
 a:hover#new_product{
