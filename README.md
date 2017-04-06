@@ -29,7 +29,7 @@ Required implementations;
 * Add a billing address that uses the same set of user addresses
 
 Gems;
-* Defaults
+* Rails default gems
 * omniauth-twitter
 
 Ruby 2.3.1
