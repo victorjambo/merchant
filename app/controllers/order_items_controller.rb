@@ -64,7 +64,7 @@ class OrderItemsController < ApplicationController
     end
     #session to find session order id we pass at "Add to cart"
     def load_order
-      @order = Order.find_or_initialize_by(id: session[:order_id], status: "unsubmitted")
+      @order = Order.find_or_initialize_by(id: session[:order_id], status: "unsubmitted", user_id: session[:user_id])
       if @order.new_record?
         @order.save!
         session[:order_id] = @order.id

@@ -7,7 +7,7 @@ Set up all [environments](http://tutorials.jumpstartlab.com/topics/environment/e
 
 [styles](http://tutorials.jumpstartlab.com/assets/merchant/styles.css)
 
-Stop: [More Intelligent Stock Checking](http://tutorials.jumpstartlab.com/projects/merchant.html#iteration-5:-dealing-with-order-quantities)
+Stop: [Checkout](http://tutorials.jumpstartlab.com/projects/merchant.html#iteration-7:-checkout)
 
 Good practice on;
 * Onmiauth
