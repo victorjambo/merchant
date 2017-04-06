@@ -7,8 +7,6 @@ Set up all [environments](http://tutorials.jumpstartlab.com/topics/environment/e
 
 [styles](http://tutorials.jumpstartlab.com/assets/merchant/styles.css)
 
-Stop: [Checkout](http://tutorials.jumpstartlab.com/projects/merchant.html#iteration-7:-checkout)
-
 Good practice on;
 * Onmiauth
 * Validations
@@ -18,7 +16,21 @@ Good practice on;
 * Complex associations/relationship of models
 * Migrations
 
-Gems; Defaults
+bugs;
+* undefined method 'order_items' in `views/orders/confirm.html.erb`
+* Cannot create new address. Fix user-id and order-id
+* usability
 
-Ruby version 2.3.1
-Rails version 5.0.2
+Required implementations;
+* authorization for admins
+* admin interface for viewing and modifying all orders
+* profile page. can view/change their information and past orders (Track order)
+* Let users pick a default shipping address
+* Add a billing address that uses the same set of user addresses
+
+Gems;
+* Defaults
+* omniauth-twitter
+
+Ruby 2.3.1
+Rails 5.0.2

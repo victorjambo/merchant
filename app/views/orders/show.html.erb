@@ -2,6 +2,7 @@
 
 <h1>Your Order</h1>
 
+<%= form_for @order do |f| %>
 <table>
   <tr>
     <th>Customer</th>
@@ -28,19 +29,29 @@
 	  	<td><%= image_tag "products/#{item.product.image_url}" %></td>
 	  	<td><%= item.product.title %></td>
 	  	<td><%= link_to item.quantity, edit_order_item_path(item) %></td>
-		<td><%= print_stock(item.product.stock, item.quantity) %></td>
+		  <td><%= print_stock(item.product.stock, item.quantity) %></td>
 	  	<td><%= print_price(item.product.price) %></td>
 	  	<td><%= print_price item.subtotal %></td>
       <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-	</tr>
+	  </tr>
   <% end %>
   <tr>
 	<td>Total:</td>
   	<td></td>
   	<td></td>
+    <td></td>
   	<td></td>
   	<td><%= print_price @order.total %></td>
   </tr>
+  <tr>
+    <th>Shipping To:</th>
+    <td>
+      <%= f.select :address_id, current_user.addresses.collect{ |a| [a.to_s, a.id] } %>
+      <%= link_to "New Address", new_address_path %>
+    </td>
+  </tr>
+  
 </table>
-
+<%= f.submit "Submit Order" %>
+<% end %>
 <%= link_to "Empty Cart", @order, data: { confirm: 'Are you sure?' }, method: :delete %>
