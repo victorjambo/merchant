@@ -17,11 +17,11 @@ Good practice on;
 * Migrations
 
 bugs;
-* ~~undefined method 'order_items' in `views/orders/confirm.html.erb`~~ _Fixed_
+* ~~undefined method 'order_items' in~~ `views/orders/confirm.html.erb` _Fixed_
 * ~~Cannot create new address. Fix user-id and order-id~~ _Fixed_
-* usability
+* ~~usability~~ _Fixed_
 
-Required implementations;
+Required Features to implement;
 * authorization for admins
 * admin interface for viewing and modifying all orders
 * profile page. can view/change their information and past orders (Track order)
