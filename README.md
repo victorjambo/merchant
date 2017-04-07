@@ -17,7 +17,7 @@ Good practice on;
 * Migrations
 
 bugs;
-* ~~undefined method 'order_items' in `views/orders/confirm.html.erb` ~~ _Fixed_
+* ~~undefined method 'order_items' in `views/orders/confirm.html.erb`~~ _Fixed_
 * ~~Cannot create new address. Fix user-id and order-id~~ _Fixed_
 * usability
 
