@@ -1,6 +1,6 @@
 class Address < ApplicationRecord
 	belongs_to :user
-	belongs_to :order
+	#belongs_to :order
 
 	validates_presence_of :line1, :city, :state, :zip
 	validates_numericality_of :zip
@@ -8,6 +8,6 @@ class Address < ApplicationRecord
 	validates :state, length: { is: 2 }#, format: { with: /\A[A-Z]\z/, message: "Two letters" }
 
 	def to_s
-		[line1, line2, city, state, zip].compact.join(', ')
+		[line1].compact.join(', ')
 	end
 end

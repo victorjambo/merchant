@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-  before_action :set_order, only: [:show, :edit, :update, :destroy]
+  before_action :set_order, only: [:show, :edit, :update, :destroy, :confirm]
 
   # GET /orders
   # GET /orders.json
@@ -53,7 +53,7 @@ class OrdersController < ApplicationController
   end
 
   def confirm
-    
+	
   end
 
   # DELETE /orders/1
