@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
   resources :addresses
   resources :orders do
     member do

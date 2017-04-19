@@ -27,6 +27,8 @@ Required Features to implement;
 * profile page. can view/change their information and past orders (Track order)
 * Let users pick a default shipping address
 * Add a billing address that uses the same set of user addresses
+* ~Category model~ _Fixed_
+* search by category
 
 Gems;
 * Rails default gems
