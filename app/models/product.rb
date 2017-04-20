@@ -9,8 +9,8 @@ class Product < ApplicationRecord
 	belongs_to :category
 
 	def self.Search(search)
-	  	if search && search != ''
-	  		where(["name LIKE ?", "%#{search}%"])
+	  	if search
+	  		where(category_id: search)
 	  	else
 	  		all.order("created_at DESC")
 	  	end
