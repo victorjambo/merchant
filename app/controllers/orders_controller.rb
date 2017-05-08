@@ -53,7 +53,7 @@ class OrdersController < ApplicationController
   end
 
   def confirm
-    #redirect_to root_url, notice: 'Your order has been shipped'
+    # redirect_to root_url, notice: 'Your order has been shipped'
   end
 
   # DELETE /orders/1

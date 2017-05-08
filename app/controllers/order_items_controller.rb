@@ -10,7 +10,7 @@ class OrderItemsController < ApplicationController
   # POST /order_items.json
   def create
     @order_item = @order.order_items.find_or_initialize_by(product_id: params[:product_id], order_id: @order.id)
-    #@order_item = OrderItem.new(product_id: params[:product_id], order_id: @order.id, quantity: 1)
+    # @order_item = OrderItem.new(product_id: params[:product_id], order_id: @order.id, quantity: 1)
     @order_item.quantity += 1
 
     respond_to do |format|
@@ -53,21 +53,23 @@ class OrderItemsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_order_item
-      @order_item = OrderItem.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def order_item_params
-      params.require(:order_item).permit(:product_id, :order_id, :quantity)
+  # Use callbacks to share common setup or constraints between actions.
+  def set_order_item
+    @order_item = OrderItem.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def order_item_params
+    params.require(:order_item).permit(:product_id, :order_id, :quantity)
+  end
+
+  # session to find session order id we pass at "Add to cart"
+  def load_order
+    @order = Order.find_or_initialize_by(id: session[:order_id], status: "unsubmitted", user_id: session[:user_id])
+    if @order.new_record?
+      @order.save!
+      session[:order_id] = @order.id
     end
-    #session to find session order id we pass at "Add to cart"
-    def load_order
-      @order = Order.find_or_initialize_by(id: session[:order_id], status: "unsubmitted", user_id: session[:user_id])
-      if @order.new_record?
-        @order.save!
-        session[:order_id] = @order.id
-      end
-    end
+  end
 end
