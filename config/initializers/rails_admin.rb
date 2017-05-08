@@ -2,9 +2,12 @@ RailsAdmin.config do |config|
 
   ### Popular gems integration
 
+  ### clearence
+  config.parent_controller = "::ApplicationController"
+
   ## == Devise ==
   config.authorize_with do
-    redirect_to main_app.root_path unless User.find(session[:user_id]).admin == true
+    redirect_to main_app.root_path unless current_user.admin?
   end
 
   # config.authenticate_with do
