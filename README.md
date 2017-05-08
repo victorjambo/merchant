@@ -20,19 +20,21 @@ bugs;
 * ~~undefined method 'order_items' in~~ `views/orders/confirm.html.erb` _Fixed_
 * ~~Cannot create new address. Fix user-id and order-id~~ _Fixed_
 * ~~usability~~ _Fixed_
+* only admin can add products
 
 Required Features to implement;
-* authorization for admins
-* admin interface for viewing and modifying all orders
+* ~authorization for admins~ _Implemented_
+* ~admin interface for viewing and modifying all orders~ _Implemented_
 * profile page. can view/change their information and past orders (Track order)
 * Let users pick a default shipping address
 * Add a billing address that uses the same set of user addresses
-* ~Category model~ _Fixed_
-* search by category
+* ~Category model~ _Implemented_
+* ~search by category~ _Implemented_
 
 Gems;
 * Rails default gems
 * omniauth-twitter
+* rails_admin
 
 Ruby 2.3.1
 Rails 5.0.2
